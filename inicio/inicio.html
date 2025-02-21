@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloinre.css">
+    <script src="https://kit.fontawesome.com/86e902233d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Inicia sesión!</title>
+</head>
+<body>
+
+    <section class="contenedor">
+        <div class="contenido">
+
+            <form class="form1" action="insertinicio.php" method="POST">
+                <h2 class="ini">Inicia sesión</h2>
+                <p class="text">Un gusto verte de nuevo!</p>
+
+                <select name="pais" class="pais">
+                    <option class="opcion">País</option><option value="Alemania">Alemania</option><option value="Andorra">Andorra</option><option value="Argentina">Argentina</option><option value="Bolivia">Bolivia</option><option value="Brasil">Brasil</option><option value="Canada">Canadá</option><option value="Chile">Chile</option><option value="Colombia">Colombia</option><option value="Ecuador">Ecuador</option><option value="Estados Unidos">Estados Unidos</option><option value="Francia">Francia</option><option value="Honduras">Honduras</option><option value="Italia">Italia</option><option value="Mexico">Mexico</option><option value="Nicaragua">Nicaragua</option><option value="Noruega">Noruega</option><option value="Peru">Perú</option><option value="Reino Unido">Reino Unido</option><option value="Venezuela">Venezuela</option>
+                </select>
+
+                <input type="text" name="correo_num" placeholder="Correo electrónico o número de teléfono" required>
+
+                <input type="password" name="contra" placeholder="Contraseña" required>
+
+                <input class="inicio" type="submit" onclick="Redireccion()" value="Iniciar sesión" name="iniciar">
+
+                <script>
+                    function Redireccion() {
+                        window.location.href = "..//pagprincipal/inicioprueba2.html";
+                    }
+                </script>
+
+                <a class="olvidos" href="#" target="">¿Olvidaste tu contraseña?</a>
+
+                
+                    <div class="separador"></div>
+                    <a class="olvidos" href="registro.html" target="">¿Todovía no estás registrado?</a>
+                    <div class="separador"></div>
+                
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

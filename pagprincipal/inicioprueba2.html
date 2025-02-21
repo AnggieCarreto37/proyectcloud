@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/86e902233d.js" crossorigin="anonymous"></script>
+
+    <meta charset='utf-8'>
+    <title>Suculentas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="Inicio">
+        <nav>
+            <ul>
+                <li class="item 6"><a href="../inicio/perfil2.html" class="menu">Perfil</a></li>
+                <li class="item 2"><a href="#Misión"     class="menu">Misión</a></li>
+                <li class="item 3"><a href="#Secciones"  class="menu">Secciones</a></li>
+                <li class="item 5"><a href="#Formulario" class="menu">Compras</a></li>
+                <li class="item1"><button class="menu">Carrito</button></li>
+
+
+                <li class="item 4"><a href="#Contacto" class="menu">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="contenedor inicio">
+
+            <div class="wave3"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+
+            <div class="jkj">
+                <div class="inicio3">
+                    <h1 class="titulo"><span>Suculentas</span></h1>
+                    <h4>Bienvenido usuario</h4>
+                </div>   
+
+            <div class="contenedor-inicio">
+                <img src="../img/rosita.png" alt="" class="img-inicio">
+            </div>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <script>
+
+    window.addEventListener("DOMContentLoaded", (event) => {
+    const carrito =document.querySelector(".item1");
+    const carrito1= document.querySelector(".resumen-carrito");
+    const agregar= document.querySelector(".carrito-padre");
+    var cont=1;
+        
+        if(carrito){
+            carrito.addEventListener("click", function(){
+
+                if((cont%2)==0){
+                    carrito1.style.display="none";
+                    agregar.style.display="none";
+                    carrito1.style.zIndex="0";
+
+                    cont++;
+                }else{
+                    carrito1.style.display="inline";
+                    agregar.style.display="";
+                    carrito1.style.zIndex="2";
+
+                    cont++;
+                }
+            });
+        }; 
+            console.log(cont);
+    });
+        
+
+        </script>
+        <main>
+
+            <section class="contenedor-mision"  id="Misión">
+
+
+                <h2 class="subtitulo1" >Por un mundo más bonito</h2> 
+
+                <div class="contenedormision">
+                    <img class="isi" src="../venta/1.svg" alt="mundo verde" width="330">
+     
+                    <div class="mision1">
+                        <p class="misi">Tal vez una planta puede parecerte algo muy insignificante, pero con solo una podemos volver más bonito un espacio en nuestro hogar y en nustras vidas.<br><br>Aquí te muestro información sobre tipos de Suculentas y todo lo que debes saber para poder cuidarlas bien.</p>
+                    </div>
+
+                    <div class="wave4"><svg viewBox="0 0 1366 134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(228, 216, 220, 1)" d="M 0 80 C 91.60000000000001 80 137.39999999999998 117 229 117 L 229 117 L 229 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(228, 216, 220, 1)" d="M 228 117 C 358 117 423 79 553 79 L 553 79 L 553 0 L 228 0 Z" stroke-width="0"></path> <path fill="rgba(228, 216, 220, 1)" d="M 552 79 C 683.2 79 748.8 125 880 125 L 880 125 L 880 0 L 552 0 Z" stroke-width="0"></path><path fill="rgba(228, 216, 220, 1)" d="M 879 125 C 996.2 125 1054.8 74 1172 74 L 1172 74 L 1172 0 L 879 0 Z" stroke-width="0"></path><path fill="rgba(228, 216, 220, 1)" d="M 1171 74 C 1249 74 1288 98 1366 98 L 1366 98 L 1366 0 L 1171 0 Z" stroke-width="0"></path></svg></div>
+                </div>
+            </section>
+
+            <section class="secciones" id="Secciones">
+                
+                    <h2 class="subtitulo">Obtén más información</h2>
+
+        <div class="contaainer">
+       
+                        <div class="box">
+                            <img src="../img/echeveria.png" alt="" class="img-menu">
+                               
+                                <div class="capa">
+                                    <a class="secc1" href="../Echeveria/PáginaEcheverias.html" target="_blank"></align><h3>Clic para más información sobre Echeverias</h3></a>
+                                </div>
+                        </div>
+       
+
+                        <div class="box">
+                            <img src="../img/graptopetalum.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../Graptopetalum/PáginaGrapto.html" target="_blank"><h3>Clic para más información sobre Graptopetalum</h3></a>
+                                </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="../img/haworthia.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../Hawortia/PáginaHaworthia.html" target="_blank"><h3>Clic para más información sobre Haworthias</h3></a>
+                                </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="../img/sedum.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../Sedum/Páginasedum.html" target="_blank"><h3>Clic para más información sobre Sedums</h3></a>
+                                </div>
+                        </div>        
+                    
+                        <div class="box">
+                            <img src="../img/pruina.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../Pruina/pruina.html" target="_blank"><h3>Clic para más información sobre ¿Qué es la pruina?</h3></a>
+                                </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="../img/etiolacion.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../Etiolación/Etiolacion.html" target="_blank"><h3>Clic para más información sobre ¿Por qué se estiran?</h3></a>
+                                </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="../img/Imagen1.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../Estrés/Estres.html" target="_blank"><h3>Clic para más información sobre ¿Por qué cambian de color?</h3></a>
+                                </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="../img/cuidados.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../Página de cuidados/páginadecuidados.html" target="_blank"><h3>Clic para más información sobre Cuidados</h3></a>
+                                </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="../img/sucuseca.png" alt="" class="img-menu">
+                                <div class="capa">
+                                    <a class="secc1" href="../por qué mueren/por qué mueren.html" target="_blank"><h3>Clic para más información sobre ¿Por qué mueren?</h3></a>
+                                </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+            </section>
+            <svg viewBox="0 0 1366 134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(228, 216, 220, 1)" d="M 0 80 C 91.60000000000001 80 137.39999999999998 117 229 117 L 229 117 L 229 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(228, 216, 220, 1)" d="M 228 117 C 358 117 423 79 553 79 L 553 79 L 553 0 L 228 0 Z" stroke-width="0"></path> <path fill="rgba(228, 216, 220, 1)" d="M 552 79 C 683.2 79 748.8 125 880 125 L 880 125 L 880 0 L 552 0 Z" stroke-width="0"></path><path fill="rgba(228, 216, 220, 1)" d="M 879 125 C 996.2 125 1054.8 74 1172 74 L 1172 74 L 1172 0 L 879 0 Z" stroke-width="0"></path><path fill="rgba(228, 216, 220, 1)" d="M 1171 74 C 1249 74 1288 98 1366 98 L 1366 98 L 1366 0 L 1171 0 Z" stroke-width="0"></path></svg>
+
+            <section class="caja" id="Formulario">  
+                <h2 class="subtitulo2">Novedades</h2>
+                <div class= "productos2"> 
+                    <div class="caja"> 
+                        <div class="opciones">
+                            <input class="cheeek" type="checkbox">
+                            <img class="img" src="../venta/amethy.png">
+
+                            <div class="agregar">
+                                <p class="nombres">Amethy en maceta<br><b>50 MXN</b></p>
+                                <button class="agregar-al-carrito" onclick="agregarAlCarrito('Amethy', 50)">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="opciones">
+                            <input class="cheeek" type="checkbox">
+                            <img class="img" src="../venta/burrito.png">
+
+                            <div class="agregar">
+                                <p class="nombres">Burrito en maceta<br><b>30 MXN</b></p>
+                                <button class="agregar-al-carrito" onclick="agregarAlCarrito('Burrito', 30)">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                        <div class="opciones">
+                            <input class="cheeek" type="checkbox">
+                            <img class="img" src="../venta/compactum.png">
+
+                            <div class="agregar">
+                                <p class="nombres">Compactum en maceta<br><b>70 MXN</b></p>
+                                <button class="agregar-al-carrito" onclick="agregarAlCarrito('Compactum', 70)">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                        <div class="opciones">
+                            <input class="cheeek" type="checkbox">
+                            <img class="img" src="../venta/dusty.png">
+
+                            <div class="agregar">
+                                <p class="nombres">Dusty en maceta<br><b>70 MXN</b></p>
+                                <button class="agregar-al-carrito" onclick="agregarAlCarrito('Dusty', 70)">Añadir al Carrito</button>
+                            </div>
+                        </div>
+
+                    </div> 
+            </div>       
+
+            </section>
+
+            <div class="carrito-padre" id="Carrito">
+                <div class="carrito">
+                    <div class="resumen-carrito">
+                    <h2 class="subtitulocarrito">Tu Carrito</h2>
+                        <p class="nombres">Total: <span class="nombres" id="total-carrito">$0.00</span></p>
+                            <div id="items-carrito">
+                            </div>
+                        <br><button class="botonc" id="boton-pagar">Pagar</button>
+                    </div>
+                 </div>
+            </div>
+
+        </main>
+
+        <script>
+        // Objeto para almacenar el estado del carrito
+        var carrito = {
+          items: [],
+          total: 0
+        };
+      
+        // Función para añadir un producto al carrito
+        function agregarAlCarrito(nombreProducto, precio) {
+          // Crear un nuevo objeto de producto
+          var producto = {
+            nombre: nombreProducto,
+            precio: precio
+          };
+          
+          // Añadir el producto al carrito
+          carrito.items.push(producto);
+          
+          // Actualizar el total
+          carrito.total += precio;
+          
+          // Actualizar la interfaz de usuario
+          actualizarInterfazCarrito();
+        }
+      
+        // Función para actualizar la interfaz de usuario del carrito
+        function actualizarInterfazCarrito() {
+          var contenedorItemsCarrito = document.getElementById('items-carrito');
+          contenedorItemsCarrito.innerHTML = ''; // Limpiar el contenedor de ítems
+      
+          carrito.items.forEach(function(item, index) {
+            var elementoItem = document.createElement('div');
+            elementoItem.classList.add('item-carrito');
+            elementoItem.innerHTML = `
+              <p class="nombres">${item.nombre}  <b>$${item.precio.toFixed(2)}</b></p>
+              <button class="botonc1" onclick="eliminarDelCarrito(${index})">Eliminar</button>
+            `;
+            contenedorItemsCarrito.appendChild(elementoItem);
+          });
+      
+          // Actualizar el total
+          document.getElementById('total-carrito').innerText = '$' + carrito.total.toFixed(2);
+        }
+      
+        // Función para eliminar un producto del carrito
+        function eliminarDelCarrito(indice) {
+          // Remover el producto del carrito
+          var producto = carrito.items.splice(indice, 1)[0];
+          
+          // Actualizar el total
+          carrito.total -= producto.precio;
+          
+          // Actualizar la interfaz de usuario
+          actualizarInterfazCarrito();
+        }
+      
+        // Inicializar la interfaz de usuario del carrito al cargar la página
+        document.addEventListener('DOMContentLoaded', actualizarInterfazCarrito);
+
+    
+        
+      </script>
+      <?php
+        mysqli_close($conexion);
+      ?>
+
+
+    <footer id="Contacto">
+    <img src="img/wave1.svg" alt="" class="wave2">
+
+        <div class="container__footer">
+            <div class="box__footer">   
+                <div class="logo">
+                    <img src="bhome.png" alt="">
+                </div>
+                <div class="lema">
+                    <p>Experta en nada, buena en todo.</p>
+                </div>
+            </div> 
+
+            <div class="box__footer">
+                <h2 class="redessociales">Ubicación</h2>
+                <p class="direc">Lomas del marqués, calle Marqués de Lizana #142<br> Te esperamos!</p>
+            </div>
+            
+            <div class="box__footer">
+                <h2 class="redessociales">Redes sociales</h2>
+                <a href="https://www.facebook.com/anggie.carreto/" target="_blank" class="redes"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="https://www.instagram.com/anggie.carreto/?hl=es-la" target="_blank" class="redes"><i class="fab fa-instagram"></i>Instagram</a>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    
+</body>
+</html>

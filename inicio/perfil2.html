@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/86e902233d.js" crossorigin="anonymous"></script>
+
+    <meta charset='utf-8'>
+    <title>Perfil</title>
+    <link rel="stylesheet" href="estilos5.css">
+</head>
+<script type="text/javascript">
+    function ConfirmDelete(){
+        var respuesta = confirm("Estás seguro que deseas eliminar el usuario?");
+
+        if(respuesta == true){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
+</script>
+
+<body>
+
+    <header class="header" id="Inicio">
+        <nav>
+            <ul>
+                <li class="item 1"><a href="../pagprincipal/inicioprueba2.html" class="menu">Tienda</a></li>
+                <li class="item 2"><a href="salir.php" class="menu">Cerrar sesión</a></li>
+                <li class="item 4"><a href="#Contacto" class="menu">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="caja1">
+
+            <div class="cajita1">
+
+            <h1 class="hola">¡Hola</h1>
+            <p class="lavacoco">Un gusto volerte a ver! <br>¿Qué novedades hay?</p>
+            <div class="imagen">
+                <img src="img/2.svg" alt="">
+            </div>
+
+            </div>
+
+            <div class="modi">
+
+                <form class="form2" action="cambio.php" method="POST">
+                    <h2>Estos son tus datos registrados.</h2>
+                    <p class="text">Puedes cambiarlos aquí.</p>
+
+                    <select name="pais" class="pais" required>
+                    <option>Andorra</option><option value="Alemania">Alemania</option><option value="Andorra">Andorra</option><option value="Argentina">Argentina</option><option value="Bolivia">Bolivia</option><option value="Brasil">Brasil</option><option value="Canada">Canadá</option><option value="Chile">Chile</option><option value="Colombia">Colombia</option><option value="Ecuador">Ecuador</option><option value="Estados Unidos">Estados Unidos</option><option value="Francia">Francia</option><option value="Honduras">Honduras</option><option value="Italia">Italia</option><option value="Mexico">México</option><option value="Nicaragua">Nicaragua</option><option value="Noruega">Noruega</option><option value="Peru">Perú</option><option value="Reino Unido">Reino Unido</option><option value="Venezuela">Venezuela</option>
+                    </select>
+
+                    <input type="text" name="nombreusuario" placeholder="Nombre de usuario" value="Usuario 1" required>
+
+                    <input type="text" name="correo_num" placeholder="Correo electrónico o número de teléfono" value="4422338859" required>
+
+                    <input class="contra" type="text" name="contra" value="Contraseña" placeholder="Contraseña" required>
+
+                    <a class="cambios" href="salir.php" target=""><input class="cambios" type="submit" value="Cambiar" name="cambios"></a>
+
+                    <div class="separador"></div>
+                    <a class="eliminos" href="#" target=""><button class="eliminos1" type="button" onclick="ConfirmDelete()">¿Quieres eliminar tu cuenta?</button></a>
+
+                    <script>
+                        function ConfirmDelete() {
+                            alert("Usuario eliminado correctamente.");
+                            window.location.href = "inicio.html";
+                        }
+                    </script>
+
+
+                </form>
+
+            </div>
+
+            
+        </div>
+    
+    </header>
+    <footer id="Contacto">
+    <svg viewBox="0 0 1366 134" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(201, 204, 213, 1)" d="M 0 80 C 91.60000000000001 80 137.39999999999998 117 229 117 L 229 117 L 229 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(201, 204, 213, 1)" d="M 228 117 C 358 117 423 79 553 79 L 553 79 L 553 0 L 228 0 Z" stroke-width="0"></path> <path fill="rgba(201, 204, 213, 1)" d="M 552 79 C 683.2 79 748.8 125 880 125 L 880 125 L 880 0 L 552 0 Z" stroke-width="0"></path><path fill="rgba(201, 204, 213, 1)" d="M 879 125 C 996.2 125 1054.8 74 1172 74 L 1172 74 L 1172 0 L 879 0 Z" stroke-width="0"></path><path fill="rgba(201, 204, 213, 1)" d="M 1171 74 C 1249 74 1288 98 1366 98 L 1366 98 L 1366 0 L 1171 0 Z" stroke-width="0"></path></svg>
+
+        <div class="container__footer">
+            <div class="box__footer">   
+                <div class="logo">
+                    <img src="bhome.png" alt="">
+                </div>
+                <div class="lema">
+                    <p>Experta en nada, buena en todo.</p>
+                </div>
+            </div> 
+
+            <div class="box__footer">
+                <h2 class="redessociales">Ubicación</h2>
+                <p class="direc">Lomas del marqués, calle Marqués de Lizana #142<br> Te esperamos!</p>
+            </div>
+            
+            <div class="box__footer">
+                <h2 class="redessociales">Redes sociales</h2>
+                <a href="https://www.facebook.com/anggie.carreto/" target="_blank" class="redes"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="https://www.instagram.com/anggie.carreto/?hl=es-la" target="_blank" class="redes"><i class="fab fa-instagram"></i>Instagram</a>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    
+</body>
+</html>
